@@ -1,80 +1,30 @@
-/* General Form Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*{
+    background-color: rgb(64, 64, 64);
+    color: aliceblue;
 }
-
-form {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 500px;
-    max-width: 100%;
+.one{
+    height: full;
+    width: full;
+    border: 5px solid rgba(114, 204, 25,0.3);
+    font-size: x-large;
+    margin: 25px;
 }
-
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-/* Input Field Styling */
-input[type="text"], 
-input[type="email"], 
-input[type="tel"], 
-input[type="date"], 
-select {
-    width: 100%;
+#para{
+    height: full;
+    width: fit-content;
+    border: 5px solid salmon;
+    margin: 25px;
     padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
+    font-size: larger;
+    font:200px;
 
-/* File Input Styling */
-input[type="file"] {
-    margin: 10px 0;
-}
 
-/* Checkbox Styling */
-input[type="checkbox"] {
-    margin-right: 10px;
 }
-
-/* Submit Button Styling */
-button[type="submit"] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px;
-    margin: 12px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+#two {
+    text-align: center;
+    height: 50px;
+    width: 250px;
+    border: 5px solid rgba(255, 2, 2,0.3);
+    margin-left: 325px;
+    padding-top: 20px;
 }
-
-button[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-/* Small Text Styling */
-small {
-    color: #666;
-    display: block;
-    margin-bottom: 10px;
-}
-
-/* Form Field Label Styling */
-label {
-    font-weight: bold;
-    margin-top: 10px;
-    display: inline-block;
-}
-
