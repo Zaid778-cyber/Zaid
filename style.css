@@ -1,81 +1,99 @@
-body{
-    margin: 0px;
-    padding: 0;
+/* styles.css */
+body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    
-}
-#header{
-    height: 90px;
-    width: 100%;
-    background-color: rgba(255, 69, 0,0.8);
-    color: white;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
 }
-
-
-/* Signup Container */
-.signup-container {
+#d{
+    height: 110px;
     width: 100%;
-    max-width: 400px;
-    margin: 50px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    background-color: orangered;
+    color: white;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    font-size: 1.8cm;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
-h1 {
+.signup-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+.signup-container h1 {
     margin-bottom: 20px;
     color: #333;
+    font-size: 24px;
 }
 
-/* Input Group */
-.input-group {
+form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+form select {
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
     margin-bottom: 15px;
     text-align: left;
 }
 
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
+.terms input {
+    margin-right: 8px;
 }
 
-.input-group input {
+.terms a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+form button {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-.input-group input:focus {
-    border-color: #28a745;
-    outline: none;
-}
-
-/* Sign-Up Button */
-.signup-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background-color: #28a745;
+    background-color: #4CAF50;
     color: white;
+    border: none;
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-.signup-button:hover {
-    background-color: #218838;
+form button:hover {
+    background-color: #45a049;
 }
-
-
-
-

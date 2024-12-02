@@ -8,35 +8,57 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <d id="header"><h1 id="first">Daraz</h1>
-        <div class="signup-container">
-            <h1>Create an Account</h1>
-            <form action="welcome.html" method="POST">
-                <div class="input-group">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" id="fullname" name="fullname" required>
-                </div>
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required>
-                </div>
-                <div class="input-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required>
-                </div>
-                <button ><a href="/first.html">Sign Up</a></button>
-            </form>
-        </div>
+    <div id="d">Daraz</div>
+    <div class="signup-container">
+        <h1>Create Your Account</h1>
+        <form>
+            <!-- Name Field -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <!-- Confirm Password Field -->
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+            <!-- Gender Selection -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Terms and Conditions -->
+            <label class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to the <a href="#">Terms and Conditions</a>.
+            </label>
+
+            <!-- Submit Button -->
+            <button> <a href="/first.html">Sign up</a> </button>
+        </form>
+    </div>
+  
+     
+
+
+
+
+
+
 
 
 
 
      
-
-     
-</body  
+</body>  
 </html>
