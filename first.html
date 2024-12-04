@@ -1,320 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+ 
     <title>Daraz</title>
     <style>
-        body{
-            margin: 0px;
-            padding: 0px;
-            background-color: rgb(255, 254, 254);
-        }
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(255, 254, 254);
+      }
 
-      
-header{
-            height: 130px;
-            width: 100%;
-            background-color: orangered;
-            margin-top: 0px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            
-}
-h1{
-    color: white;
-    margin-left: 30%;
-    font-size: 1.4cm;
-    padding-right: 20px;
-}
-textarea{
-    height: 40px;
-    width: 500px
-    
-    
-    
-    
-    
-}
+      header {
+        height: 130px;
+        width: 100%;
+        background-color: orangered;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      h1 {
+        color: white;
+        margin-left: 30%;
+        font-size: 1.4cm;
+        padding-right: 20px;
+      }
+      textarea {
+        height: 40px;
+        width: 500px;
+      }
 
-#text{
-    border-radius: 10px;
-    font-size: xx-large;
-    border-radius: 20px;
-}
+      #text {
+        border-radius: 10px;
+        font-size: xx-large;
+        border-radius: 20px;
+      }
 
-#Bas{
-    margin-left: 30px;
-    font-size: xx-large;
-} 
-#text:hover{
-    border: 4px solid black;
-    
+      #Bas {
+        margin-left: 30px;
+        font-size: xx-large;
+      }
+      #text:hover {
+        border: 4px solid black;
+      }
+      #search:hover {
+        border: 2px solid red;
+        background-color: white;
+        z-index: 1;
+      }
+      #Bas:hover {
+        font-size: 1cm;
+        background-color: white;
+        z-index: 1;
+      }
+      #one:hover {
+        font-size: 2cm;
+        z-index: 1;
+        color: black;
+      }
+      #pic {
+        background-image: url("picture\ two.jpg");
+        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+      }
+      #d {
+        height: 40px;
+        width: 70%;
+        background-color: white;
+        margin-bottom: 30px;
+        font-size: x-large;
+        text-align: center;
+      }
+      #d:hover {
+        border: 3px solid black;
+        z-index: 1;
+      }
 
-   
-
-}
-#search:hover{
-    border: 2px solid red;
-    background-color: white;
-    z-index: 1;
-}
-#Bas:hover{
-    font-size: 1cm;
-    background-color: white;
-    z-index: 1;
-}
-#one:hover{
-    font-size: 2cm;
-    z-index: 1;
-    color: black;
-
-}
-#pic{
-    background-image: url("picture\ two.jpg");
-    background-size: cover;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-
-}
-#d{
-   
-    height: 40px;
-    width: 70%;
-    background-color: white;
-    margin-bottom: 30px;
-    font-size: x-large;
-    text-align: center;
-    
-}
-#d:hover{
-    border: 3px solid black;
-    z-index: 1;
-}
-
-#b{
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(255, 192, 203,0.4);
-   
-}
-#j{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-#bone{
-    height: 400px;
-    width: 23%;
-     background-color: white;
-}
-#bone:hover{
-    /* border: 5px solid white; */
-    font-size: x-large;
-    z-index: 1;
-
-}
-#btwo{
-    height: 400px;
-    width: 23%;
-    background-color: white;
-}
-#btwo:hover{
-    font-size: x-large;
-    z-index: 1;
-}
-#bthree{
-    height: 400px;
-    width: 23%;
-    background-color: white;
-}
-#bthree:hover{
-    font-size: x-large;
-    z-index: 1;
-   
-}
-#bfor{
-    height: 400px;
-    width: 23%;
-    background-color: white;
-}
-#bfor:hover{
-    font-size: x-large;
-    z-index: 1;
-}
-#imgone{
-    background-image: url(picture\ three.jpg);
-    background-size: cover;
-    height: 350px;
-    width: 100%;
-}
-#imgtwo{
-    background-image: url(pic\ fout.jpg);
-    background-size: cover;
-    height: 350px;
-    width: 100%;
-}
-#i{
-    background-image: url(computer.jpg);
-    background-size: cover;
-    height: 350px;
-    width: 100%;
-    
-}
-#f{
-    
-    background-image: url(Gaming.jpg);
-    background-size: cover;
-    height: 350px;
-}
-#fd{
-    height: 80px;
-    width: 100%;
-    background-color: white;
-
-}
-#b1c1{
-    display: flex;
-    justify-content: space-between;
-}
-#kj{
-    background-image: url(4b4e7350f4356afc57f861c7eeee58b4.jpg_400x400q80.jpg_.webp);
-    background-size: cover;
-    height: 350px;
-
-}
-
-
+      #b {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(255, 192, 203, 0.4);
+      }
+      #j {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      #bone {
+        height: 400px;
+        width: 23%;
+        background-color: white;
+      }
+      #bone:hover {
+        /* border: 5px solid white; */
+        font-size: x-large;
+        z-index: 1;
+      }
+      #btwo {
+        height: 400px;
+        width: 23%;
+        background-color: white;
+      }
+      #btwo:hover {
+        font-size: x-large;
+        z-index: 1;
+      }
+      #bthree {
+        height: 400px;
+        width: 23%;
+        background-color: white;
+      }
+      #bthree:hover {
+        font-size: x-large;
+        z-index: 1;
+      }
+      #bfor {
+        height: 400px;
+        width: 23%;
+        background-color: white;
+      }
+      #bfor:hover {
+        font-size: x-large;
+        z-index: 1;
+      }
+      #imgone {
+        background-image: url(picture\ three.jpg);
+        background-size: cover;
+        height: 350px;
+        width: 100%;
+      }
+      #imgtwo {
+        background-image: url(pic\ fout.jpg);
+        background-size: cover;
+        height: 350px;
+        width: 100%;
+      }
+      #i {
+        background-image: url(computer.jpg);
+        background-size: cover;
+        height: 350px;
+        width: 100%;
+      }
+      #f {
+        background-image: url(Gaming.jpg);
+        background-size: cover;
+        height: 350px;
+      }
+      #fd {
+        height: 80px;
+        width: 100%;
+        background-color: white;
+      }
+      #b1c1 {
+        display: flex;
+        justify-content: space-between;
+      }
+      #kj {
+        background-image: url(4b4e7350f4356afc57f861c7eeee58b4.jpg_400x400q80.jpg_.webp);
+        background-size: cover;
+        height: 350px;
+      }
     </style>
-</head>
-<body>
-   <header>
-    <h1 id="one">Daraz</h1> 
-   <textarea name="" id="text" placeholder="Search in Daraz"></textarea>
-   <div id="search">  <i class="fa-solid fa-magnifying-glass"></i></div>
-   <div id="Bas"><i class="fa-solid fa-cart-shopping"></i></div>
-</header>
-<div id="pic"> 
-    <div id="d">You are on Daraz.com. You can shop also on Daraz Pakistan for millions of products with fastest  local delivery</div>
-</div>
-
-<div id="j">
- <div id="b">
-    <div id="bone">
-        <h2>Health & Personal Care</h2>
-        <div id="imgone"></div>
-        <p>See more</p>
-
-    </div>
-    <div id="btwo">
-        <h2>Deal in PC</h2>
-        <div id="imgtwo"></div>
-        <h4>See more</h4>
-    </div>
-    <div id="bthree">
-        <h2>deal on computer</h2>
-        <div id="i"></div>
-        <p>See more</p>
-    </div>
-    <div id="bfor">
-        <h2>Gaming Corner</h2>
-        <div id="f"></div>
-        <h3>See more</h3>
+  </head>
+  <body>
+    <header>
+      <h1 id="one">Daraz</h1>
+      <textarea name="" id="text" placeholder="Search in Daraz"></textarea>
+      <div id="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+      <div id="Bas"><i class="fa-solid fa-cart-shopping"></i></div>
+    </header>
+    <div id="pic">
+      <div id="d">
+        You are on Daraz.com. You can shop also on Daraz Pakistan for millions
+        of products with fastest local delivery
+      </div>
     </div>
 
- </div>
-</div>
-
-<div id="b1c1" >
-    <div style="height: 300px; width: 300px; margin-top: 80px; margin-left: 40px; border: 3px solid black;" >
-        <div style="height: 300px; width: 300px;"  id="kj"></div>
-    <h2> Shan bombay biryani </h2>
+    <div id="j">
+      <div id="b">
+        <div id="bone">
+          <h2>Health & Personal Care</h2>
+          <div id="imgone"></div>
+          <p>See more</p>
+        </div>
+        <div id="btwo">
+          <h2>Deal in PC</h2>
+          <div id="imgtwo"></div>
+          <h4>See more</h4>
+        </div>
+        <div id="bthree">
+          <h2>deal on computer</h2>
+          <div id="i"></div>
+          <p>See more</p>
+        </div>
+        <div id="bfor">
+          <h2>Gaming Corner</h2>
+          <div id="f"></div>
+          <h3>See more</h3>
+        </div>
+      </div>
     </div>
-    <div style="height: 300px; width: 300px; margin-top: 85px; margin-left: 10px; border: 2px solid;">
-        <div style="background-image: url(e722879f290537184d7c6c2ce46e4715.png_400x400q80.png_.webp); background-size: cover;
-        height: 300px;"></div>
+
+    <div id="b1c1">
+      <div
+        style="
+          height: 300px;
+          width: 300px;
+          margin-top: 80px;
+          margin-left: 40px;
+          border: 3px solid black;
+        "
+      >
+        <div style="height: 300px; width: 300px" id="kj"></div>
+        <h2>Shan bombay biryani</h2>
+      </div>
+      <div
+        style="
+          height: 300px;
+          width: 300px;
+          margin-top: 85px;
+          margin-left: 10px;
+          border: 2px solid;
+        "
+      >
+        <div
+          style="
+            background-image: url(e722879f290537184d7c6c2ce46e4715.png_400x400q80.png_.webp);
+            background-size: cover;
+            height: 300px;
+          "
+        ></div>
         <h2>Pro White TWS Airpods Sound & High Quality</h2>
-
+      </div>
+      <div style="height: 300px; width: 300px; margin-top: 85px">
+        <div
+          style="
+            background-image: url(2c968ce27a6b5af52af43b733e9efe93.jpg_200x200q80.jpg_.webp);
+            height: 300px;
+            background-size: cover;
+            border: 2px solid;
+          "
+        ></div>
+        <h2>New Stylist Trouser</h2>
+      </div>
+      <div
+        style="
+          height: 300px;
+          width: 300px;
+          margin-top: 80px;
+          margin-left: 40px;
+          border: 3px solid;
+        "
+      >
+        <div
+          style="
+            background-image: url(e1a6d5bef3c4c89471a3751545cc4c5f.jpg_200x200q80.jpg_.webp);
+            background-size: cover;
+            height: 300px;
+          "
+        ></div>
+        <h2>100% Pure Korean Fabric Laptop Backpack</h2>
+      </div>
+      <div style="position: fixed; bottom: 0px"></div>
     </div>
-     <div style="height: 300px; width: 300px; margin-top: 85px; ">
-        <div style="background-image: url(2c968ce27a6b5af52af43b733e9efe93.jpg_200x200q80.jpg_.webp); height: 300px;background-size: cover; border: 2px solid;"> </div>
-        <h2> New Stylist Trouser</h2>
-    </div>
-    <div style="height: 300px; width: 300px; margin-top: 80px; margin-left: 40px; border: 3px solid;">
-        <div style="background-image: url(e1a6d5bef3c4c89471a3751545cc4c5f.jpg_200x200q80.jpg_.webp); background-size: cover;height: 300px;"></div>
-        <h2>100% Pure Korean Fabric Laptop Backpack </h2>
-    </div>
-    <div style="position: fixed; bottom: 0px;"></div>
-    
-</div>
 
-
-<div style="display: flex;">
-    <div style="height: 300px; width: 300px; margin-top: 80px; margin-left: 40px; border: 3px solid;">
-        <div style="background-image: url(d182bd20a64bf84246aaf852f44d8e19.jpg_200x200q80.jpg_.webp); background-size: cover;
-        height: 300px;"></div>
+    <div style="display: flex">
+      <div
+        style="
+          height: 300px;
+          width: 300px;
+          margin-top: 80px;
+          margin-left: 40px;
+          border: 3px solid;
+        "
+      >
+        <div
+          style="
+            background-image: url(d182bd20a64bf84246aaf852f44d8e19.jpg_200x200q80.jpg_.webp);
+            background-size: cover;
+            height: 300px;
+          "
+        ></div>
         <h2>100% Waterproof Washing Machine Cover -Top Loader Automatic</h2>
+      </div>
+      <div
+        style="
+          height: 300px;
+          width: 300px;
+          margin-top: 80px;
+          margin-left: 40px;
+          border: 3px solid;
+        "
+      >
+        <div
+          style="
+            background-image: url(f070543c2f434ed1bdb5014afc707c21.jpg_200x200q80.jpg_.webp);
+            background-size: cover;
+            height: 300px;
+          "
+        ></div>
+        <h2>HY Boutique Linning Upper, Top, Coat, Zipper, Jacket</h2>
+      </div>
+      <div
+        style="
+          height: 300px;
+          width: 300px;
+          margin-top: 80px;
+          margin-left: 40px;
+          border: 3px solid;
+        "
+      >
+        <div
+          style="
+            background-image: url(b6b1b25d0ee17b9b655348919d62d411.jpg_200x200q80.jpg_.webp);
+            background-size: cover;
+            height: 300px;
+          "
+        ></div>
+        <h2>
+          P47 Wireless Headset Bluetooth Foldable On-Ear Headphone (Connect with
+          All Smart Cell Phones / Laptops / Computer Systems).
+        </h2>
+      </div>
+      <div
+        style="
+          height: 300px;
+          width: 300px;
+          margin-top: 80px;
+          margin-left: 40px;
+          border: 3px solid;
+        "
+      >
+        <div
+          style="
+            background-image: url(72114b0f41eea2219229505dca4e2781.png_200x200q80.png_.webp);
+            background-size: cover;
+            height: 300px;
+          "
+        ></div>
+        <h2>
+          Wooden Wall Clock-3D Watch DIY Design Decoration Birds Numeral Quartz
+          For Home Décor Living
+        </h2>
+      </div>
+      <div
+        style="
+          height: 300px;
+          width: 300px;
+          margin-top: 80px;
+          margin-left: 40px;
+          border: 3px solid;
+        "
+      >
+        <div
+          style="
+            background-image: url(e835c804bdea3cc0926614a4a8acf537.jpg_400x400q80.jpg_.webp);
+            background-size: cover;
+            height: 300px;
+          "
+        ></div>
+        <h2>
+          Tummy Trimmer Single Spring & Twister Plate Disc High Quality Weight
+          Loss Machine For Home Gym
+        </h2>
+      </div>
     </div>
-    <div style="height: 300px; width: 300px; margin-top: 80px; margin-left: 40px; border: 3px solid;">
-        <div style="background-image: url(f070543c2f434ed1bdb5014afc707c21.jpg_200x200q80.jpg_.webp); background-size: cover; height: 300px;">  </div> 
-        <h2>HY Boutique Linning Upper, Top, Coat, Zipper, Jacket </h2></div>
-    <div style="height: 300px; width: 300px; margin-top: 80px; margin-left: 40px; border: 3px solid;">
-<div style="background-image: url(b6b1b25d0ee17b9b655348919d62d411.jpg_200x200q80.jpg_.webp); background-size: cover; height: 300px;">    </div> <h2>P47 Wireless Headset Bluetooth Foldable On-Ear Headphone (Connect with All Smart Cell Phones / Laptops / Computer Systems).</h2>
+
+    <div style="display: flex">
+      <div style="background-image: ur()"></div>
     </div>
-    <div style="height: 300px; width: 300px; margin-top: 80px; margin-left: 40px; border: 3px solid;">
-        <div style="background-image: url(72114b0f41eea2219229505dca4e2781.png_200x200q80.png_.webp); background-size: cover;
-         height: 300px; "></div>
-         <h2>Wooden Wall Clock-3D Watch DIY Design Decoration Birds Numeral Quartz For Home Décor Living </h2>
-
-    </div>
-         <div  style="height: 300px; width: 300px; margin-top: 80px; margin-left: 40px; border: 3px solid;">
-            <div style="background-image: url(e835c804bdea3cc0926614a4a8acf537.jpg_400x400q80.jpg_.webp); background-size: cover; height: 300px;"></div>
-            <h2>Tummy Trimmer Single Spring & Twister Plate Disc High Quality Weight Loss Machine For Home Gym</h2>
-         </div>
-        </div>
-
-        <div style="display: flex;">
-            <div style=" background-image:ur() "></div>
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+  </body>
 </html>
